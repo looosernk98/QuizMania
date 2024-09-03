@@ -1,10 +1,13 @@
 import React from "react";
 import './style.css'
 
-const Instruction = ({ startQuiz }) => {
+const Instruction = ({ startQuiz,showMesg }) => {
 
     const handleStart = () => {
         startQuiz(true)
+        showMesg(false)
+
+        
     }
     return (
         <div className="container">
