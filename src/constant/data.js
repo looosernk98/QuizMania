@@ -1,10 +1,12 @@
 
-export const Html_Data = [
+
+ const htmlData = [
     {
         question: "What Does HTML Stand For",
         id: 1,
         options: ["hyper text markup language", "home tool markup language", "hyperlinks and text markup language"],
         selected: "",
+        correct: 0
        
     },
     {
@@ -12,19 +14,21 @@ export const Html_Data = [
         id: 2,
         options: ["<break>", "<lb>", "<br>"],
         selected: "",
-       
+        correct: 2
     },
     {
         question: "Choose the correct HTML element to define important text",
         id: 3,
         options: ["<important>", "<strong>", "<i>" , "<b>"],
         selected: "",
+        correct: 1
     },
     {
         question: "Choose the correct HTML element to define emphasized text",
         id: 4,
         options: ["<em>", "<italic>","<i>"],
         selected: "",
+        correct: 1
 
     },
     {
@@ -32,6 +36,7 @@ export const Html_Data = [
         id: 5,
         options: ['<a href="url" target="new"', '<a href="url" new', '<a href="url"target="_blank"'],
         selected: "",
+        correct: 2
       
     },
     {
@@ -39,6 +44,7 @@ export const Html_Data = [
         id: 6,
         options: ["<ul>", "<ol>", "<list>", "<dl>"],
         selected: "",
+        correct: 1
        
     },
     {
@@ -46,6 +52,7 @@ export const Html_Data = [
         id: 7,
         options: ['<checkbox>', '<input type="check">', '<input type="checkbox">', '<check>'],
         selected: "",
+        correct: 2
 
     },
     {
@@ -53,6 +60,7 @@ export const Html_Data = [
         id: 8,
         options:  ["<ul>", "<ol>", "<list>", "<dl>"],
         selected: "",
+        correct: 0
       
     },
     {
@@ -60,6 +68,7 @@ export const Html_Data = [
         id: 9,
         options: ['<list>', '<input type="dropdown">', '<input type="list">', '<select>'],
         selected: "",
+        correct: 1
 
     },
     {
@@ -67,17 +76,19 @@ export const Html_Data = [
         id: 10,
         options: ["true", "false", "there iis no such thing as an <iframe>"],
         selected: "",
+        correct: 0
       
     },
 ]
 
 
-export const Css_Data = [
+ const cssData = [
     {
         question: "What does CSS stand for?",
         id: 1,
         options: ["colorfull style sheets", "creative style sheets", "cascading style sheets", "computer style sheets"],
         selected: "",
+        correct: 2
        
     },
     {
@@ -85,6 +96,7 @@ export const Css_Data = [
         id: 2,
         options: ["in the <body> section", "in the <head> section", "at the end of the document"],
         selected: "",
+        correct: 1
        
     },
     {
@@ -92,12 +104,14 @@ export const Css_Data = [
         id: 3,
         options: ["// this is a comment //", "/* this is a comment */", " // this is a comment"],
         selected: "",
+        correct: 1
     },
     {
         question: "Which CSS property controls the text size?",
         id: 4,
         options: ["text-size","font-size","text-style", "font-style"],
         selected: "",
+        correct: 1
 
     },
     {
@@ -105,6 +119,7 @@ export const Css_Data = [
         id: 5,
         options: ['<p style = "text-size : bold"','p{text-size:bold}','<p style = "font-size: bold"', 'p{font-weight:bold}'],
         selected: "",
+        correct: 3
       
     },
     {
@@ -112,6 +127,7 @@ export const Css_Data = [
         id: 6,
         options: ["a{underline:none}", "a{text-decorattion:none}", "a{decorattion:no-underline}", "a{text-decoration:no-underline}" ],
         selected: "",
+        correct: 1
        
     },
     {
@@ -119,6 +135,7 @@ export const Css_Data = [
         id: 7,
         options: ["div p", "div.p", "div+p"],
         selected: "",
+        correct: 0
 
     },
     {
@@ -126,6 +143,7 @@ export const Css_Data = [
         id: 8,
         options: ["relative", "absolute", "fixed", "static"],
         selected: "",
+        correct: 3
       
     },
     {
@@ -133,6 +151,7 @@ export const Css_Data = [
         id: 9,
         options: ["Separate each selector with a comma", "Separate each selector with a plus sign", "Separate each selector with a space"],
         selected: "",
+        correct: 0
 
     },
     {
@@ -140,17 +159,19 @@ export const Css_Data = [
         id: 10,
         options: [ " list-type: square", " list-style-type: square" , "list: square"],
         selected: "",
+        correct: 1
       
     },
 ]
 
-export const Javascript_Data =  [
+ const javascriptData =  [
 
     {
         question: "Inside which HTML element do we put the JavaScript?",
         id: 1,
-        options: ["<javascript>", "<scripting>", "<js>", "script"],
+        options: ["<javascript>", "<scripting>", "<js>", "<script>"],
         selected: "",
+        correct: 3
        
     },
     {
@@ -158,19 +179,23 @@ export const Javascript_Data =  [
         id: 2,
         options: ['<script src="xxx.js">','<script href="xxx.js">','<script name="xxx.js">'],
         selected: "",
+        correct: 0
        
     },
     {
         question: "Where is the correct place to insert a JavaScript?",
         id: 3,
-        options: ["the <head> section", "both the <head> section and <body> section", "the <body> section"],
+        options: ["the <head> section", "the <body> section", "both the <head> section and <body> section"],
         selected: "",
+        correct: 2
     },
     {
         question: 'How do you write "Hello World" in an alert box?',
         id: 4,
         options: ['alert("hello world")', 'mesgBox("hello world")', 'mesg("hello world")', 'alertBox("hello world")'],
         selected: "",
+        correct: 0
+        
 
     },
     {
@@ -178,6 +203,7 @@ export const Javascript_Data =  [
         id: 5,
         options: ["Math.ceil(x,y)", "top(x,y)", "Math.max(x,y)", "ceil(x,y)"],
         selected: "",
+        correct: 2
       
     },
     {
@@ -185,6 +211,7 @@ export const Javascript_Data =  [
         id: 6,
         options: ["if i = 5","if i == 5 then","if i = 5 then","if (i == 5)"  ],
         selected: "",
+        correct: 3
        
     },
     {
@@ -192,6 +219,7 @@ export const Javascript_Data =  [
         id: 7,
         options: ["'This is a comment","//This is a comment"," <!--This is a comment-->"],
         selected: "",
+        correct: 1
 
     },
     {
@@ -199,6 +227,7 @@ export const Javascript_Data =  [
         id: 8,
         options: ["onmouseover","onchange","onmouseclick","onclick"  ],
         selected: "",
+        correct: 3
       
     },
     {
@@ -206,6 +235,7 @@ export const Javascript_Data =  [
         id: 9,
         options: ["  <!--This comment has more than one line-->", " /*This comment has more than one line*/  ", " //This comment has more than one line//"],
         selected: "",
+        correct: 1
 
     },
     {
@@ -216,23 +246,26 @@ export const Javascript_Data =  [
             '#demo.innerHTML = "Hello World!"',
             'document.getElementByName("p").innerHTML = "Hello World!"'],
         selected: "",
+        correct: 1
       
     },
 ]
 
-export const React_Data =  [
+ const reactData =  [
     {
         question: "What is the correct command to create a new React project?",
         id: 1,
         options: ["npx create-react-app","npm create-react-app myReactApp", "npm create-react-app", "npx create-react-app myReactApp "],
         selected: "",
+        correct: 3
        
     },
     {
-        question: 'What does myReactApp refer to in the following command? "npx create-react-app myReactApp"  A reference to an existing app',
+        question: 'What does myReactApp refer to in the following command? "npx create-react-app myReactApp"',
         id: 2,
         options: ["The name you want to use for the new app","The directory to create the new app in","The type of app to create"],
         selected: "",
+        correct: 0
        
     },
     {
@@ -240,6 +273,7 @@ export const React_Data =  [
         id: 3,
         options: ["True" ,"False"],
         selected: "",
+        correct: 0
        
     },
     {
@@ -247,12 +281,14 @@ export const React_Data =  [
         id: 4,
         options: ["To refer to a function","To bind the function","To directly access a DOM node","To refer to another JavaScript file"],
         selected: "",
+        correct: 2
     },
     {
         question: "What is the correct syntax to import a Component from React?",
         id: 5,
         options: ["import [ Component ] from 'react'","import React.Component from 'react'","import { Component } from 'react'","import Component from 'react'"],
         selected: "",
+        correct: 3
 
     },
     {
@@ -260,6 +296,7 @@ export const React_Data =  [
         id: 6,
         options: ["Hooks can only be called inside React Function components","Hooks can be called in Class or Function components","Hooks cannot be conditional","Hooks can only be called at the top level of a component"],
         selected: "",
+        correct: 1
       
     },
 
@@ -268,6 +305,7 @@ export const React_Data =  [
         id: 7,
         options: ["React DOM", "DOM", "Virtual DOM", "Shadow DOM"],
         selected: "",
+        correct: 2
 
     },
     {
@@ -275,6 +313,7 @@ export const React_Data =  [
         id: 8,
         options: ["??", "::", "&&", "||"],
         selected: "",
+        correct: 2
       
     },
     {
@@ -282,6 +321,7 @@ export const React_Data =  [
         id: 9,
         options: ["id", "key", "data", "index"],
         selected: "",
+        correct: 1
 
     },
     {
@@ -289,6 +329,15 @@ export const React_Data =  [
         id: 10,
         options: ["React DOM", "Babel", "React Router", "JSX Compiler"],
         selected: "",
+        correct: 1
       
     },
 ]
+
+
+export const Questions = {
+    html:htmlData,
+    css:cssData,
+    javascript:javascriptData,
+    react:reactData
+}

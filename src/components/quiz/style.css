@@ -4,11 +4,11 @@
     height: 100vh;
     width: 100vw;
     padding: 50px;
-    background-color: rgb(173, 23, 173);
+    background-color: rgb(105, 99, 255);
 }
 
 .ques-box{
-    background-color: whitesmoke;
+    background-color: rgb(236, 247, 242);
     border-radius: 4px;
     padding: 20px;
     margin-left: 260px;
@@ -28,12 +28,12 @@
     flex-direction: column;
     font-size:large;
     font-weight: 800;
-    color: rgb(77, 4, 145);
+    color: black;
 
 }
 
 h1{
-    color: rgb(77, 4, 145);
+   color: rgb(12, 12, 12)
  
 }
 
@@ -41,7 +41,7 @@ h1{
 span{
     font-size:x-large;
     font-weight: 800;
-    color: rgb(163, 65, 255);
+    color: black;
   
 }
 
@@ -49,15 +49,15 @@ span{
     column-gap: 20px;
     font-size:large;
     font-weight: 600;
-    color: rgb(77, 4, 145);
+    color: black;
 }
 
 
 .button-container{
     display: flex;
     position: absolute;
-    bottom: 30%;
-    right: 30%;
+    bottom: 10%;
+    right: 20%;
     column-gap: 20px;
 }
 
@@ -66,7 +66,6 @@ button{
     height: 50px;
     width: 120px;
     padding: 10px;
-   background-color :rgb(173, 23, 173);
    color: white;
    font-size: large;
    border-radius: 4px;

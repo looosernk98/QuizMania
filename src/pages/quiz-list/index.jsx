@@ -4,46 +4,39 @@ import { IoLogoHtml5 } from "react-icons/io";
 import { IoLogoCss3 } from "react-icons/io";
 import { TbBrandJavascript } from "react-icons/tb";
 import { GrReactjs } from "react-icons/gr";
-import { Html_Data, Css_Data, Javascript_Data, React_Data } from "../../constant/data";
-
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 
+const QuizList = () => {
 
-const HomePage = () => {
-
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
     const quizList = [
         {
             name: "HTML",
             icon: <IoLogoHtml5 />,
-            path: '/html',
-            questions: Html_Data
+            path: "/quiz/html"
         },
         {
             name: "CSS",
             icon: <IoLogoCss3 />,
-            path: '/css',
-            questions: Css_Data
+            path:"/quiz/css"
         },
         {
             name: "JAVASCRIPT",
             icon: <TbBrandJavascript />,
-            path: '/javascript',
-            questions: Javascript_Data
+            path:"/quiz/javascript"
         },
         {
             name: "REACT",
             icon: <GrReactjs />,
-            path: '/react',
-            questions: React_Data
+            path:"/quiz/react"
         }
     ]
 
-    const handleClick = () => {
-       
+    const handleClick = (item) => {
+        navigate(item.path)
     }
 
 
@@ -51,15 +44,17 @@ const HomePage = () => {
         <div className="container">
             {
                 quizList.map((item, index) => (
-                <div key={index} onClick={handleClick} className="card">
-                 <span className="icon" >{item.icon}</span>
-                 {item.name}
-                </div>))
+                    <div key={index} onClick={() => handleClick(item)} className="card">
+                        <div className="icon" >{item.icon}</div>
+                        <div className="name">{item.name}</div>
+                    </div>))
             }
 
 
         </div>
+       
     )
 }
 
-export default HomePage
+export default QuizList
+

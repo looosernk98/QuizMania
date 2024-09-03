@@ -1,0 +1,30 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(12, 0, 145);
+    color: white;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    list-style-type: none;
+
+}
+
+li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.active{
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+
+
