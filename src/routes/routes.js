@@ -2,7 +2,7 @@ export const router = {
     dashBoard: '/',
     quiz: '/quiz',
     about: '/about',
-    contact: '/cotact',
+    contact: '/contact',
     quizStart: '/quiz/:type',
     noPath: '*',
 }

@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+1. test shoulde be in separate window so that other actionable items can't be clicked
+2. footer
+3. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+sidebar in test to quick selection of question.
+different types of questions
+login
+ranking
+Rating
 
-## Available Scripts
 
-In the project directory, you can run:
+For a quiz app dashboard, the content typically includes an overview of key metrics, access to quiz management features, and user engagement insights. Below is a suggested structure for the dashboard content:
 
-### `npm start`
+1. Header Section:
+App Name/Logo: Display the name or logo of the quiz app.
+User Profile: Profile picture, username, and settings icon.
+Notifications: Alerts for new quizzes, updates, or messages.
+Logout Button: Option to sign out of the account.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Main Dashboard Overview:
+Total Quizzes: Number of quizzes available in the app.
+Active Quizzes: Number of quizzes currently active.
+Total Participants: Number of users who have participated in quizzes.
+Quiz Attempts: Total number of quiz attempts made by users.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Recent Activity:
+Latest Quizzes: List of the most recent quizzes created or published.
+Recent Quiz Attempts: Overview of the latest user attempts, showing the quiz name, user, and score.
 
-### `npm test`
+4. Quiz Management:
+Create New Quiz: Button to start creating a new quiz.
+Manage Quizzes: Access to a list of all quizzes with options to edit, delete, or publish/unpublish.
+Categories: View and manage quiz categories or topics.
+Question Bank: Access to a repository of questions that can be reused in different quizzes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. User Engagement & Analytics:
+User Performance: Graphs or charts showing average scores, pass/fail rates, and time spent on quizzes.
+Top Performers: List of users with the highest scores or most quiz attempts.
+Quiz Popularity: Insights into the most attempted or highest-rated quizzes.
 
-### `npm run build`
+6. Leaderboard:
+Top Scorers: Display of the top participants based on scores or quiz completion time.
+Achievements: Badges or awards for users who have achieved milestones in the app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+7. Feedback & Reviews:
+User Feedback: Section for viewing user feedback or reviews on specific quizzes.
+Ratings Overview: Average rating for quizzes, possibly broken down by quiz or category.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+8. Additional Tools/Features:
+Settings: Options to customize quiz settings, such as time limits, scoring rules, or themes.
+Reports: Generate detailed reports on quiz performance, user engagement, or specific quizzes.
+Help/Support: Access to help guides, FAQs, or customer support.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+9. Footer Section:
+Copyright Information: App ownership details.
+Privacy Policy & Terms: Links to legal documents.
+Contact Information: Customer support contact details.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

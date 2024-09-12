@@ -1,15 +1,28 @@
-.container{
-     display: flex;
+.instruction-container{
+     /* display: flex; */
      /* flex-direction: column; */
+     padding: 2rem 10rem;
+}
+.action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-ul{
-    /* display: flex; */
-    /* flex-direction: column; */
+.instruction-list{
+    display: flex;
+    flex-direction: column;
+
+}
+.instruction-list > li{
+  
 }
 
 button{
     color: white;
-    background-color: rgb(12, 0, 145);
-    
+    background-color: var(--theme-color);
+}
+
+.wish{
+    color: var(--theme-color);
 }

@@ -7,6 +7,9 @@ import { router } from './routes/routes';
 import Quiz from './components/quiz';
 import Navbar from './components/navbar';
 import Instruction from './components/instruction';
+import About from './pages/about';
+import Contact from './pages/contact';
+import Footer from './components/footer';
 
 
 
@@ -35,6 +38,14 @@ function App() {
       component: <Quiz/>
     },
     {
+      path:router.about ,
+      component: <About/>
+    },
+    {
+      path:router.contact ,
+      component: <Contact/>
+    },
+    {
       path:router.noPath,
       component: <h1>worng URL path</h1>
     },
@@ -46,13 +57,15 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      <div className='content'>
       <Routes>
         {
           quizList.map((item, index) => (<Route key={index} path={item.path} element={item.component} />))
 
         }
-
       </Routes>
+      </div>
+      <Footer/>
     </div>
   );
 }

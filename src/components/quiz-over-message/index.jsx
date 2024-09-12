@@ -6,13 +6,15 @@ import { Link } from "react-router-dom";
 const Message = ({marks}) => {
 
     return(
-        <>
-        <h1>your response have been submited successfully</h1>
-        <h1> your score {marks} / 10 </h1>
-        <Link to='/quiz'><button>back</button></Link>
-        <Link to='/'><button>back to home</button></Link>
-        
-        </>
+        <div className="quiz-over-container">
+        <h1 className="msg">Your response have been submited successfully</h1>
+        <br />
+        <h1> Your score <span className="score">{marks} / 10</span> </h1>
+        <div className="redirect">
+            <Link to='/quiz'><button>Back</button></Link>
+            <Link to='/'><button>Back To Home</button></Link>
+        </div>
+        </div>
     )
 }
 export default Message
